@@ -11,17 +11,25 @@
 <div id="game">
 	<div id="board">
 		<div id="player"></div>	
+		<div id="score">Score: 0</div>
+		<button id="start" onclick="start()">START</button>
 	</div>
 	<div id="controls">
-		<div id="up" onclick="up()"><button>UP</button></div>
-		<div id="left"><button onclick="left()">LEFT</button></div>
-		<div id="right"><button onclick="right()">RIGHT</button></div>
-		<div id="down"><button onclick="down()">DOWN</button></div>
+		<div id="control-left">
+			<div id="up" onclick="up()"><button>UP</button></div>
+			<div id="left"><button onclick="left()">LEFT</button></div>
+			<div id="right"><button onclick="right()">RIGHT</button></div>
+			<div id="down"><button onclick="down()">DOWN</button></div>
+		</div>
+		<div id="control-right">
+			<div id="jump"><button onclick="jump()">JUMP</button></div>
+			<div id="attack"><button onclick="attack()">ATT</button></div>
+		</div>
 
 	</div>
 
 </div>
-
+<audio id="f" src="sounds/fire.mp3"></audio>
 <script src="app.js"></script>
 </body>
 </html>
